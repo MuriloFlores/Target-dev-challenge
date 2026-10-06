@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Library</OutputType>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="IoC\" />
+      <Folder Include="Persistence\" />
+      <Folder Include="Repositories\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\CommissionManager.Domain\CommissionManager.Domain.csproj" />
+      <ProjectReference Include="..\CommissionManager.Application\CommissionManager.Application.csproj" />
+    </ItemGroup>
+
+</Project>
