@@ -9,13 +9,16 @@
 
     <ItemGroup>
       <Folder Include="IoC\" />
-      <Folder Include="Persistence\" />
-      <Folder Include="Repositories\" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\CommissionManager.Domain\CommissionManager.Domain.csproj" />
       <ProjectReference Include="..\CommissionManager.Application\CommissionManager.Application.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.12" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.3" />
     </ItemGroup>
 
 </Project>
